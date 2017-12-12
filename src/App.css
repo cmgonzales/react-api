@@ -30,10 +30,37 @@
   margin-left: 20px !important;
 }
 .select{
-  padding-top: 9px;
-  padding-bottom: 10px;
+  padding-top: 2px;
+  padding-bottom: 4px;
   margin-left:10px;
 }
 .header{
   margin-left:10px;
+  color: black
+}
+
+body{
+background-image: url('san.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.nav{
+  background-color: black;
+  margin-bottom: 20px !important;
+}
+.records{
+  font-weight: bold;
+  color: black;
+}
+.navs{
+
+  color: white;
+  margin: 0 auto;
+
+}
+
+.nameInsert{
+  margin-top: 5px;
+  color: black;
 }

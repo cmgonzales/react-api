@@ -57,7 +57,7 @@ clickMe=()=>{
 render(){
   return(
     <div>
-    <h3 className = 'header'>San Francisco Crime Records</h3>
+    
     <select className ='select'
     value={this.state.selectValue} 
     onChange={this.handleChange} 
@@ -73,10 +73,11 @@ render(){
     onClick={this.clickMe}>
     submit 
   </button>
-        <h1>{this.state.value}</h1>
+  <h3 className = 'nameInsert'>{this.state.value}</h3>    
         {this.state.crime.map(function(stat, i){
           return(
-              <ul >
+              
+              <ul className = 'records'>
               <li key={i}>{stat.address} {stat.time} {stat.descript} </li>
               </ul>
 
