@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import Userinput from './UserInput';
 import './App.css';
-import Crime from './crime'
+import Crime from './crime';
+import Nav from './navbar';
 
 
 class App extends Component {
   render() {
     return (
       <div> 
-      
-      <Userinput/>
+      <Nav/>
       <Crime/>
       </div>
     );
