@@ -46,12 +46,12 @@ background-size: cover;
 }
 
 .nav{
-  background-color: black;
+  background-color: white;
   margin-bottom: 20px !important;
 }
 .records{
   font-weight: bold;
-  color: black;
+  color: white;
 }
 .navs{
 
@@ -62,5 +62,5 @@ background-size: cover;
 
 .nameInsert{
   margin-top: 5px;
-  color: black;
+  color:white;
 }
