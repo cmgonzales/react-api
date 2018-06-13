@@ -40,7 +40,7 @@ clickMe=()=>{
   const self = this;
 
   
-  var url = `https://data.sfgov.org/resource/gxxq-x39z.json?pddistrict=MISSION&dayofweek=Friday&$order=date%20DESC&$where=date%3E%272017-01-01T12:00:00%27&category=${this.state.value}`
+  var url = `https://data.sfgov.org/resource/cuks-n6tp.json?pddistrict=MISSION&dayofweek=Friday&$order=date%20DESC&$where=date%3E%272018-01-01T12:00:00%27&category=${this.state.value}`
   axios.get(url).then(function(response){
     self.setState({crime: response.data});
   })
