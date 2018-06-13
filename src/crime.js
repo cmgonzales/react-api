@@ -45,6 +45,7 @@ clickMe=()=>{
     self.setState({crime: response.data});
   })
 
+
 }
 
 
@@ -62,7 +63,7 @@ render(){
     value={this.state.selectValue} 
     onChange={this.handleChange} 
    > <option value="Select">PLEASE SELECT</option>
-    <option value="VANDALISM">VANDALISM</option>
+    <option value="LARCENY/THEFT">LARCENY/THEFT</option>
     <option value="ROBBERY">ROBBERY</option>
     <option value="ASSAULT">ASSAULT</option>
     <option value="DRUG/NARCOTIC">DRUG/NARCOTIC</option>
