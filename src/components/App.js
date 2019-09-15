@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import './App.css';
-import Crime from './crime';
+import '../style/App.css';
+import Header from './header';
 import Nav from './navbar';
-
+import History from './history'
 
 class App extends Component {
   render() {
     return (
       <div> 
       <Nav/>
-      <Crime/>
+      <Header/>
+      <History/>
       </div>
     );
   }

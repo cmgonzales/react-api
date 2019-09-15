@@ -4,17 +4,33 @@
   "private": true,
   "dependencies": {
     "axios": "^0.17.1",
-    "bootstrap": "^4.0.0-beta.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "bootstrap": "^4.3.1",
+    "full": "^1.0.1",
+    "page": "^1.11.4",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "react-dropdown": "^1.3.3",
-    "react-scripts": "1.0.17",
-    "reactstrap": "^5.0.0-alpha.4"
+    "react-fullpage": "^0.1.19",
+    "react-scripts": "^1.0.17",
+    "reactstrap": "^5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmgonzales/react-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmgonzales/react-api/issues"
+  },
+  "homepage": "https://github.com/cmgonzales/react-api#readme"
 }

@@ -1,17 +1,13 @@
 
 import React from 'react';
 import axios from 'axios';
+import '../style/crime.css'
 
-//TODO: Refactor this API request so that it takes in a user's input and fires off on a button click
-//You will need to remove the axios request from here and put it in your parent component
-//then pass down the state to this component -- feel free to rename components as well!
+
+
 
 class crime extends React.Component{
 
-
-    
-//this is when the constructor function helps us out by
-//giving access to the props or state from the parent
 constructor(props){
   super(props)
  this.state = {crime: [],
@@ -48,17 +44,9 @@ clickMe=()=>{
 
 }
 
-
-
-
-//don't forget, all components must be wrapped in a div - it's the React way!!!
-
-//we pass in i in the render method (the index) to prevent duplicate keys
-//if you are not familiar with map.. LOOK IT UP!!!
 render(){
   return(
-    <div>
-    
+      <div className = 'crime'>
     <select className ='select'
     value={this.state.selectValue} 
     onChange={this.handleChange} 
@@ -85,6 +73,7 @@ render(){
           )
         })}
     </div>
+    
   )
 
 

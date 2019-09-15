@@ -1,0 +1,40 @@
+.btn{
+  margin-left: 20px !important;
+}
+.select{
+  padding-top: 2px;
+  padding-bottom: 4px;
+  margin-left:10px;
+}
+.header{
+  margin-left:10px;
+  color: black
+}
+
+.nav{
+  background-color:black;
+  margin-bottom: 20px !important;
+}
+.records{
+  font-weight: bold;
+  color: white;
+}
+.navs{
+
+  color: white;
+  margin: 0 auto;
+
+}
+
+.nameInsert{
+  margin-top: 5px;
+  color:white;
+}
+
+.crime{
+  background-image: url('../img/san.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+    }
