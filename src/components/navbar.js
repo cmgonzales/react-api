@@ -1,5 +1,12 @@
-import React from 'react';
-import { Nav, Dropdown, DropdownItem, DropdownToggle, DropdownMenu } from 'reactstrap';
+import React from "react";
+import '../style/navbar.css'
+import {
+  Nav,
+  Dropdown,
+  DropdownItem,
+  DropdownToggle,
+  DropdownMenu
+} from "reactstrap";
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -20,18 +27,18 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <Nav tabs className = 'nav'>
-          
+        <Nav tabs className="nav">
           <Dropdown nav isOpen={this.state.dropdownOpen} toggle={this.toggle}>
             <DropdownToggle nav caret>
               Link
             </DropdownToggle>
-        <DropdownMenu>
+            <DropdownMenu>
               <DropdownItem Github>
-              <a href =  'www.github.com/cmgonzales'>Github</a></DropdownItem>
-              </DropdownMenu>
+                <a href="www.github.com/cmgonzales">Github</a>
+              </DropdownItem>
+            </DropdownMenu>
           </Dropdown>
-          <h1 className ="navs">San Francisco Crime Records</h1>
+          <h1 className="navs">San Francisco Crime Records</h1>
         </Nav>
       </div>
     );

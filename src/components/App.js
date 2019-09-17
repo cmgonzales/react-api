@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../style/App.css';
 import Header from './header';
 import Nav from './navbar';
-import History from './history'
+import Footer from './Footer'
 
 class App extends Component {
   render() {
@@ -10,7 +10,7 @@ class App extends Component {
       <div> 
       <Nav/>
       <Header/>
-      <History/>
+      <Footer/>
       </div>
     );
   }

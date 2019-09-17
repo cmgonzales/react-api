@@ -11,14 +11,8 @@
   color: black
 }
 
-.nav{
-  background-color:black;
-  margin-bottom: 20px !important;
-}
-.records{
-  font-weight: bold;
-  color: white;
-}
+
+
 .navs{
 
   color: white;
@@ -26,15 +20,4 @@
 
 }
 
-.nameInsert{
-  margin-top: 5px;
-  color:white;
-}
 
-.crime{
-  background-image: url('../img/san.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  
-    }

@@ -4,8 +4,6 @@ import axios from 'axios';
 import '../style/crime.css'
 
 
-
-
 class crime extends React.Component{
 
 constructor(props){
@@ -23,16 +21,10 @@ constructor(props){
             
          }
       
-    
-    
-     
-//this function tells react to wait until the component is mounted (rendered)
-//before firing off our http request
+
 clickMe=()=>{
     
-    
-  //define `this` here because `this` will be different inside our
-  //axios request - we want to refer to the react object here
+  
   const self = this;
 
   
@@ -65,7 +57,6 @@ render(){
   <h3 className = 'nameInsert'>{this.state.value}</h3>    
         {this.state.crime.map(function(stat, i){
           return(
-              
               <ul className = 'records'>
               <li key={i}>{stat.address} {stat.time} {stat.descript} </li>
               </ul>

@@ -1,7 +1,16 @@
 .crime{
     background-image: url("../img/san.jpg");
-    height: 100vh;
+    height: 90vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.select{
+    margin-top: 30px;
+    
+}
+.nameInsert, .record{
+    margin-left: 20px;
+    color: white;
 }
