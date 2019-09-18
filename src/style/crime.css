@@ -10,7 +10,11 @@
     margin-top: 30px;
     
 }
-.nameInsert, .record{
+.nameInsert {
     margin-left: 20px;
     color: white;
+}
+.records{
+    color: white;
+    
 }
