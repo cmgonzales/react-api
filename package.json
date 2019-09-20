@@ -27,10 +27,17 @@
     "type": "git",
     "url": "git+https://github.com/cmgonzales/react-api.git"
   },
+  
+  "browserslist": [
+    ">0.2%",
+    "not ie <= 11"
+  ],
+
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cmgonzales/react-api/issues"
   },
   "homepage": "https://github.com/cmgonzales/react-api#readme"
+
 }
