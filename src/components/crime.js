@@ -23,7 +23,7 @@ class crime extends React.Component {
 
 
   };
-
+// mapping the array
   render() {
     return (
       <div className="crime">
