@@ -34,7 +34,7 @@ export default class Example extends React.Component {
             </DropdownToggle>
             <DropdownMenu>
               <DropdownItem Github>
-                <a href="www.github.com/cmgonzales">Github</a>
+                <a href="www.github.com/cmgonzales" target="_blank">Github</a>
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>

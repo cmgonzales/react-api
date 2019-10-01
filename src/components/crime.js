@@ -5,6 +5,7 @@ import "../style/crime.css";
 const Crime = () => {
   const [crime, setCrime] = useState([]);
   const [value, setValue] = useState("");
+  const [data, setData] = useState('')
 
   const results = e => {
     console.log("test");
@@ -12,6 +13,7 @@ const Crime = () => {
     axios.get(url).then(function(response) {
       setCrime(response.data);
     });
+    setData(value)
   };
 
   return (
@@ -31,7 +33,7 @@ const Crime = () => {
       <button className="btn btn-primary" value={value} onClick={results}>
         submit
       </button>
-      <h3 className="nameInsert">{value}</h3>
+      <h3 className="nameInsert">{data}</h3>
       {crime.slice(0, 20).map(stat => (
         <ul className="records">
           <li>
