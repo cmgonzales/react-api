@@ -18,11 +18,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cmgonzales/react-api.git"
@@ -36,5 +40,5 @@
   "bugs": {
     "url": "https://github.com/cmgonzales/react-api/issues"
   },
-  "homepage": "https://github.com/cmgonzales/react-api#readme"
+  "homepage": "https://github.com/cmgonzales/react-api"
 }
