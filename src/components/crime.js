@@ -1,19 +1,23 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "../style/crime.css";
+import { seeCrimes } from "../redux";
+import { useSelector, useDispatch } from "react-redux";
 
 const Crime = () => {
-  const [crime, setCrime] = useState([]);
-  const [value, setValue] = useState("");
-  const [data, setData] = useState('')
+  const crime = useSelector((state) => state.crimes);
+  const dispatch = useDispatch();
 
-  const results = e => {
-    console.log("test");
+  const [value, setValue] = useState("");
+  const [data, setData] = useState("");
+
+  const results = () => {
     var url = `https://data.sfgov.org/resource/cuks-n6tp.json?pddistrict=MISSION&dayofweek=Friday&$order=date%20DESC&$where=date%3E%272018-01-01T12:00:00%27&category=${value}`;
-    axios.get(url).then(function(response) {
-      setCrime(response.data);
+    axios.get(url).then((response) => {
+      const crimes = response.data;
+      dispatch(seeCrimes(crimes));
     });
-    setData(value)
+    setData(value);
   };
 
   return (
@@ -21,7 +25,7 @@ const Crime = () => {
       <select
         className="select"
         value={value}
-        onChange={e => setValue(e.target.value)}
+        onChange={(e) => setValue(e.target.value)}
       >
         {" "}
         <option value="Select">PLEASE SELECT</option>
@@ -30,19 +34,18 @@ const Crime = () => {
         <option value="ASSAULT">ASSAULT</option>
         <option value="DRUG/NARCOTIC">DRUG/NARCOTIC</option>
       </select>
-      <button className="btn btn-primary" value={value} onClick={results}>
+      <button className="btn btn-primary" onClick={results}>
         submit
       </button>
       <h3 className="nameInsert">{data}</h3>
-      {crime.slice(0, 20).map(stat => (
+      {crime.slice(0, 20).map((crime) => (
         <ul className="records">
           <li>
-            {stat.address} {stat.time} {stat.descript}{" "}
+            {crime.address} {crime.time} {crime.descript}{" "}
           </li>
         </ul>
       ))}
     </div>
   );
 };
-
 export default Crime;
