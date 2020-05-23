@@ -1,0 +1,1 @@
+export const SEE_CRIMES = 'SEE_CRIMES'
