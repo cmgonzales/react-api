@@ -2,7 +2,7 @@
   "name": "react-api",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/cmgonzales/react-api",
+  "homepage": "https://cmgonzales.github.io/react-api/",
   "dependencies": {
     "axios": "^0.18.1",
     "bootstrap": "^4.3.1",
