@@ -1,2 +1,5 @@
-San Francisco Crime rate with history
-using React hooks
+
+
+San Francisco Crime API with REDUX
+
+
